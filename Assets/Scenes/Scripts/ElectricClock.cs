@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Clock : MonoBehaviour
+public class ElectricClock : MonoBehaviour
 {
     [SerializeField]
     Transform hoursPivot, minutePivot, secondsPivot;

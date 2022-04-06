@@ -6,7 +6,7 @@ public class HourGlass : MonoBehaviour
 {
     public GameObject sand;
 
-    public int sandCount = 4000;
+    public int sandCount = 1000;
     public int sandPerFrame = 5;
 
     void Update()

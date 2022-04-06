@@ -13,7 +13,8 @@ public class AnalogClock : MonoBehaviour
         minutePivot.localRotation = Quaternion.Euler(0, 0, -6f * (float)time.TotalMinutes);
 
         float seconds = (float)Math.Floor(time.TotalSeconds);
+        float remainer = Mathf.Lerp(0, 1, Mathf.Atan((float)time.TotalSeconds - seconds) * 20);
 
-        secondsPivot.localRotation = Quaternion.Euler(0, 0, -6f * seconds);
+        secondsPivot.localRotation = Quaternion.Euler(0, 0, -6f * (seconds + remainer));
     }
 }
